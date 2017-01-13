@@ -27,3 +27,15 @@ Create user, for connection with mongo
 >db.createUser({ user: "jesus", pwd: "123", roles: [ { role: "readWrite", db: "test_jesus" }]});
 
 ```
+###Configure laravel with database
+
+Open the file .env and edit the parameters
+
+```php
+DB_CONNECTION=mongodb
+DB_HOST=127.0.0.1
+DB_PORT=27017
+DB_DATABASE=test_jesus
+DB_USERNAME=jesus
+DB_PASSWORD=123
+```
