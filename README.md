@@ -60,10 +60,30 @@ Run artisan migrate to create collections in mongodb next to the seeders
 php artisan migrate:refresh --seed
 ```
 
-start laravel
+###Start laravel
+
+To start the laravel service the following command is executed
 
 ```shell
 php artisan server
 ```
 
+###Api Rest handling from laravel
+
+Verifying the system routes in laravel
+
+```shell
+php artisan route:list
++--------+----------+-----------+------+---------------------------------------------+--------------+
+| Domain | Method   | URI       | Name | Action                                      | Middleware   |
++--------+----------+-----------+------+---------------------------------------------+--------------+
+|        | GET|HEAD | /         |      | Closure                                     | web          |
+|        | GET|HEAD | api/user  |      | Closure                                     | api,auth:api |
+|        | POST     | task      |      | App\Http\Controllers\TaskController@store   | web          |
+|        | PUT      | task      |      | App\Http\Controllers\TaskController@store   | web          |
+|        | GET|HEAD | task/{id} |      | App\Http\Controllers\TaskController@show    | web          |
+|        | DELETE   | task/{id} |      | App\Http\Controllers\TaskController@destroy | web          |
+|        | GET|HEAD | tasks     |      | App\Http\Controllers\TaskController@index   | web          |
++--------+----------+-----------+------+---------------------------------------------+--------------+
+```
 
