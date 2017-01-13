@@ -1,7 +1,7 @@
 
 ### Requirements
 
-Programs                | Package
+Programs                | Version
 :-----------------------|:----------
  Laravel                | 5.3.x
  PHP   	                | 5.6.x
@@ -38,4 +38,13 @@ DB_PORT=27017
 DB_DATABASE=test_jesus
 DB_USERNAME=jesus
 DB_PASSWORD=123
+```
+Open shell, go to app path
+```shell
+cd test_jesus
+```
+Run artisan migrate to create collections in mongodb next to the seeders
+```shell
+php artisan migrate:refresh --seed
+
 ```
