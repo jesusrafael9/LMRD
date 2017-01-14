@@ -88,6 +88,19 @@ php artisan route:list
 +--------+----------+-----------+------+---------------------------------------------+--------------+
 ```
 
+###See task list from redis service
+
+Enter the redis shell
+
+```shell
+redis-cli
+```
+
+View task list all
+```shell
+get tasks:index
+```
+
 Links relations
 
 install redis: 
