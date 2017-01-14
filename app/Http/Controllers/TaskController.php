@@ -22,12 +22,14 @@ class TaskController extends Controller
     {
         $this->response = $response;
     }
+
+    //Method that list of tasks
     public function index()
     {
 
         $posts = Redis::get('tasks:index');
         
-        //dd($posts);
+        
         if (!$posts) {
             $posts = Task::all();
             $redis = Redis::connection();
@@ -40,11 +42,11 @@ class TaskController extends Controller
         
         return view('tasks', ["data" => $valor->getData()->data,"pagination" => $valor->getData()->meta->pagination ] );
     }
- 
+    //Method that shows the search of a task
     public function show($id)
     {  
         $posts = Redis::get('tasks:find');
-        //dd($posts);
+        
         if (!$posts) {
             $posts = Task::find($id);
             $redis = Redis::connection();
