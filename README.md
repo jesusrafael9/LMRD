@@ -1,4 +1,6 @@
 
+***This application was run on debian jessie operating system***
+
 ### Requirements
 
 Programs                | Version
@@ -88,7 +90,7 @@ get tasks:index
 ```
 
 See tasks searched by id in redis
- 
+
 ```shell
 get get tasks:find
 ```
