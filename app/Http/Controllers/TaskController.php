@@ -8,6 +8,8 @@ use EllipseSynergie\ApiResponse\Contracts\Response;
 
 use App\Task;
 
+use Illuminate\Support\Facades\Redis;
+
 use App\TaskTransformer;
 
 
@@ -22,6 +24,15 @@ class TaskController extends Controller
     }
     public function index()
     {
+
+        $posts = Redis::get('tasks:index');
+        
+        //dd($posts);
+        if (!$posts) {
+            $posts = Task::all();
+            $redis = Redis::connection();
+            $redis->set('tasks:index', $posts);
+        }
 
     	$tasks = Task::paginate(5);
         // Return a collection of $task with pagination

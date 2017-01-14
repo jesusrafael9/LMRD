@@ -7,6 +7,7 @@ Programs                | Version
  PHP   	                | 5.6.x
  MongoDB                | 3.4.x
  Extension PHP5 MongoDB | 1.5.x 
+ Redis 					| 3.2.X 
  Composer 				| 1.3.x
  Laravel                | 5.3.x
  
@@ -87,3 +88,8 @@ php artisan route:list
 +--------+----------+-----------+------+---------------------------------------------+--------------+
 ```
 
+Links relations
+
+install redis: 
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis

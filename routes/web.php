@@ -13,7 +13,10 @@
 
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    $redis = app()->make('redis');
+    $redis->set("key1", "hola redis");
+    return $redis->get("key1");
 });
 Route::get('tasks','TaskController@index');
 // show a task
