@@ -125,7 +125,22 @@ Example:
 
 ![post_rest](https://cloud.githubusercontent.com/assets/15696325/21971910/00e9c6c4-db94-11e6-80fd-c4aa4404c1e2.png)
 
-**GET/search **:
+**GET/search**:
+
+- To do the search, place in the URL:/task/{id}
+- Then choose the GET method
+
+![get_rest](https://cloud.githubusercontent.com/assets/15696325/21972361/be97af30-db97-11e6-9bbc-ab1181698fb4.png)
+
+- Get method results
+
+![result_get_rest](https://cloud.githubusercontent.com/assets/15696325/21972415/22498f80-db98-11e6-87e3-6a9190fa84af.png)
+
+**DELETE/destroy**:
+
+
+
+
 
 
 
