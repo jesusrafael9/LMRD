@@ -141,8 +141,12 @@ Example:
 
 **DELETE/destroy**:
 
+- To delete a record is sent from the URL: /task/{id}
+
+![delete_rest_1](https://cloud.githubusercontent.com/assets/15696325/21972781/d6b1ebfa-db9a-11e6-9fd0-85020a32d970.png)
 
 
+**PUT/update**:
 
 
 
