@@ -111,6 +111,7 @@ Example image:
 
 ![rest_google_post](https://cloud.githubusercontent.com/assets/15696325/21971746/521d3564-db92-11e6-9f5c-730f4ca0d4d1.png)
 
+**POST/add**:
 
 Making a post from Advanced rest client
 
@@ -124,6 +125,7 @@ Example:
 
 ![post_rest](https://cloud.githubusercontent.com/assets/15696325/21971910/00e9c6c4-db94-11e6-80fd-c4aa4404c1e2.png)
 
+**GET/search **:
 
 
 
@@ -146,3 +148,7 @@ Links relations
 install redis: 
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis
+
+Advanced rest client:
+
+https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo
