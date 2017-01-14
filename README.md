@@ -86,6 +86,9 @@ View task list all
 get tasks:index
 ```
 
+![redis-cli](https://cloud.githubusercontent.com/assets/15696325/21972612/737a52d0-db99-11e6-98d4-6c914c472712.png)
+
+
 ###Api Rest handling from laravel
 
 Verifying the system routes in laravel
