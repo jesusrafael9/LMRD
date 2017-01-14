@@ -18,7 +18,7 @@ class TasksTableSeeder extends Seeder
                     "title"         =>  "Test $i",
                     "description"   =>  "Test $i", 
                     "due_date"      =>  "2018-01-15",
-                    "completed"     =>  true,
+                    "completed"     =>  false,
                     "created_at"    =>  date("Y-m-d H:i:s"),
                     "updated_at"    =>  date("Y-m-d H:i:s"),
                 ],
