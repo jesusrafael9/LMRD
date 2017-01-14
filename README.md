@@ -112,6 +112,27 @@ Example image:
 ![rest_google_post](https://cloud.githubusercontent.com/assets/15696325/21971746/521d3564-db92-11e6-9f5c-730f4ca0d4d1.png)
 
 
+Making a post from Advanced rest client
+
+- In the resquest field the URL is added to make a post: http: // localhost: 8000 / task
+
+- Then choose the post method
+
+- The api parameters are loaded in the data form option
+
+Example:
+
+![post_rest](https://cloud.githubusercontent.com/assets/15696325/21971910/00e9c6c4-db94-11e6-80fd-c4aa4404c1e2.png)
+
+
+
+
+
+
+
+
+
+
 
 
 
