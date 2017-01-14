@@ -72,7 +72,7 @@
                 </div>
                   <ul>
                     @foreach($data as $val)
-                        <li>Title: {{ $val->title }}</li>
+                        <li>id: {{ $val->_id }} - Title: {{ $val->title }}</li>
                     @endforeach
                   </ul>
                   <div>
