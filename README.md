@@ -82,9 +82,17 @@ redis-cli
 ```
 
 View task list all
+
 ```shell
 get tasks:index
 ```
+
+See tasks searched by id in redis
+ 
+```shell
+get get tasks:find
+```
+
 
 ![redis-cli](https://cloud.githubusercontent.com/assets/15696325/21972612/737a52d0-db99-11e6-98d4-6c914c472712.png)
 

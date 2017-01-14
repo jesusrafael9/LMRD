@@ -42,7 +42,14 @@ class TaskController extends Controller
     }
  
     public function show($id)
-    {
+    {  
+        $posts = Redis::get('tasks:find');
+        //dd($posts);
+        if (!$posts) {
+            $posts = Task::find($id);
+            $redis = Redis::connection();
+            $redis->set('tasks:find', $posts);
+        }
         //Get the task
         $task = Task::find($id);
         if (!$task) {
@@ -68,6 +75,7 @@ class TaskController extends Controller
         }
         
  
+ 
     }
  
     public function store(Request $request)  {
@@ -85,13 +93,15 @@ class TaskController extends Controller
             $task = new Task;
             $task->created_at = date("Y-m-d H:i:s");    
         }
-        
-        $task->title = $request->input('title');
-        $task->description = $request->input('description');
-        $task->due_date = $request->input('due_date');
-        $task->completed = $request->input('completed');
-        $task->updated_at = date("Y-m-d H:i:s");
-
+        if ($request->input('title') != "" || $request->input('due_date') != "" ){
+            $task->title = $request->input('title');
+            $task->description = $request->input('description');
+            $task->due_date = $request->input('due_date');
+            $task->completed = $request->input('completed');
+            $task->updated_at = date("Y-m-d H:i:s");
+        }else{
+            return $this->response->errorInternalError('Incomplete data error');
+        }
  
         if($task->save()) {
             return $this->response->withItem($task, new  TaskTransformer());

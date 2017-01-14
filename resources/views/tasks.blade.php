@@ -21,6 +21,10 @@
                 margin: 0;
             }
 
+            td{
+                padding: 7px;
+            }
+
             .full-height {
                 height: 100vh;
             }
@@ -70,11 +74,25 @@
                 <div class="title m-b-md">
                     TASKs
                 </div>
-                  <ul>
+                <table stles="text-align:center; border:1px solid;" >
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th>Due Date </th>
+                        <th>Completed (1:true - 0:false)</th>
+                    </tr>
                     @foreach($data as $val)
-                        <li>id: {{ $val->_id }} - Title: {{ $val->title }}</li>
+                    <tr>
+                        <td>{{ $val->_id }}</td>
+                        <td>{{ $val->title }}</td>
+                        <td>{{ $val->description }}</td>
+                        <td>{{ $val->due_date }}</td>
+                        <td>{{ $val->completed }}</td>
+                    </tr>
                     @endforeach
-                  </ul>
+                </table>
+                    
                   <div>
                 
                 <div class="links">            
