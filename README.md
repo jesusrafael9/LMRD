@@ -67,6 +67,23 @@ To start the laravel service the following command is executed
 
 ```shell
 php artisan server
+Laravel development server started on http://127.0.0.1:8000/
+```
+
+Open the browser with the URL:
+http://127.0.0.1:8000/
+
+###See task list from redis service
+
+Enter the redis shell
+
+```shell
+redis-cli
+```
+
+View task list all
+```shell
+get tasks:index
 ```
 
 ###Api Rest handling from laravel
@@ -88,18 +105,19 @@ php artisan route:list
 +--------+----------+-----------+------+---------------------------------------------+--------------+
 ```
 
-###See task list from redis service
 
-Enter the redis shell
 
-```shell
-redis-cli
-```
 
-View task list all
-```shell
-get tasks:index
-```
+
+
+
+
+
+
+
+
+
+
 
 Links relations
 
