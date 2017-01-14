@@ -148,18 +148,10 @@ Example:
 
 **PUT/update**:
 
+- To update a record
+- The id search parameter is: task_id
 
-
-
-
-
-
-
-
-
-
-
-
+![put_rest](https://cloud.githubusercontent.com/assets/15696325/21973000/4989fcd4-db9c-11e6-9323-a3b437a6d2c0.png)
 
 
 
@@ -174,3 +166,7 @@ https://www.digitalocean.com/community/tutorials/how-to-install-and-use-redis
 Advanced rest client:
 
 https://chrome.google.com/webstore/detail/advanced-rest-client/hgmloofddffdnphfgcellkdfbfbjeloo
+
+Install mongo in Laravel:
+
+https://github.com/jenssegers/laravel-mongodb
